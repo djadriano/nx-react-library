@@ -84,8 +84,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-${{ steps.versions.outputs.node_version }}-
 
-      - name: Install deps
-        run: npm ci
+      - name: Run NX commands
+        run: |
+          npx nx affected --target lint --parallel 3
+          npx nx affected --target test --parallel 3 --ci
+          npx nx affected --target build --parallel 3
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -93,11 +96,8 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@djadriano'
 
-      - name: Run NX commands
-        run: |
-          npx nx affected --target lint --parallel 3
-          npx nx affected --target test --parallel 3 --ci
-          npx nx affected --target build --parallel 3
+      - name: Install deps
+        run: npm ci
 
       - name: Release
         run: npx semantic-release
