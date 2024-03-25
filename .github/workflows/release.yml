@@ -116,6 +116,11 @@ jobs:
       - name: Build library
         run: npx nx build ui
 
+      - name: Generate .nvmrc
+        run: |
+          echo @djadriano:https://npm.pkg.github.com/ > build/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
+
       - name: Release
         run: |
           npm publish dist/ui
