@@ -118,8 +118,8 @@ jobs:
 
       - name: Generate .nvmrc
         run: |
-          echo @djadriano:https://npm.pkg.github.com/ > dist/.npmrc
-          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> dist/.npmrc
+          echo @djadriano:https://npm.pkg.github.com/ > dist/ui/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> dist/ui/.npmrc
 
       - name: Release
         run: |
