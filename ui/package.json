@@ -10,7 +10,7 @@
     }
   },
   "files": [
-    "dist/ui"
+    "dist"
   ],
   "repository": {
     "type": "git",
