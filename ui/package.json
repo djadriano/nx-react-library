@@ -1,0 +1,22 @@
+{
+  "name": "@djadriano/nx-react-library",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "files": [
+    "dist/components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djadriano/nx-react-library.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
