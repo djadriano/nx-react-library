@@ -13,7 +13,7 @@
     },
     "nx-release-publish": {
       "options": {
-        "packageRoot": "{workspaceRoot}/ui/dist"
+        "packageRoot": "{project}/dist"
       }
     }
   }
