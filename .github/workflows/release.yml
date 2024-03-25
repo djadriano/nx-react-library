@@ -84,6 +84,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-${{ steps.versions.outputs.node_version }}-
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@djadriano'
+
       - name: Install dependencies
         run: |
           if [ "${{ steps.package_manager.outputs.name == 'yarn' }}" == "true" ]; then
@@ -103,12 +109,6 @@ jobs:
           npx nx affected --target test --parallel 3 --ci
           npx nx affected --target build --parallel 3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@djadriano'
-
       - name: Print Environment Info
         run: npx nx report
         shell: bash
@@ -117,9 +117,14 @@ jobs:
         run: npx nx build ui
 
       - name: Release
-        run: |
-          npx nx release publish
+        run: npm publish dist/ui
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Release
+      #   run: |
+      #     npx nx release publish
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

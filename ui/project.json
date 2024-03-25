@@ -7,7 +7,7 @@
   "// targets": "to see all targets run: nx show project ui --web",
   "targets": {
     "build": {
-      "outputs": ["{workspaceRoot}/dist/ui", "{workspaceRoot}/dist/ui/main.js"]
+      "outputs": ["{workspaceRoot}/dist/ui"]
     }
   }
 }
