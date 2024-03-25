@@ -118,7 +118,7 @@ jobs:
 
       - name: Release
         run: |
-          npm publish dist/ui --access public
+          npx nx release publish
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
