@@ -8,7 +8,7 @@
     "nx-release-publish": {
       "outputs": ["{options.outputPath}"],
       "options": {
-        "packageRoot": "../ui/dist"
+        "packageRoot": "../ui"
       }
     }
   }
