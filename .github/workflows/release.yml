@@ -118,7 +118,9 @@ jobs:
       #     npx nx build ui --emptyOutDir
 
       - name: Release
-        run: npx nx release publish
+        run: |
+          npx nx release
+          npx nx release publish
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
