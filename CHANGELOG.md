@@ -1,3 +1,14 @@
+## 8.3.4 (2024-03-25)
+
+
+### 🩹 Fixes
+
+- test ([d601d96](https://github.com/djadriano/nx-react-library/commit/d601d96))
+
+### ❤️  Thank You
+
+- Adriano Fernandes
+
 ## 8.3.3 (2024-03-25)
 
 
