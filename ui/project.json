@@ -8,6 +8,18 @@
   "targets": {
     "build": {
       "outputs": ["{workspaceRoot}/dist/ui"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/ui"
+      }
+    },
+    "release": {
+      "version": {
+        "generatorOptions": {
+          "packageRoot": "dist/{projectName}"
+        }
+      }
     }
   }
 }
