@@ -7,7 +7,7 @@
   "targets": {
     "nx-release-publish": {
       "options": {
-        "packageRoot": "ui"
+        "packageRoot": "dist"
       }
     }
   }
