@@ -1,3 +1,14 @@
+## 8.3.1 (2024-03-25)
+
+
+### 🩹 Fixes
+
+- **build:** fix the build output ([362c468](https://github.com/djadriano/nx-react-library/commit/362c468))
+
+### ❤️  Thank You
+
+- Adriano Fernandes
+
 ## 8.3.0 (2024-03-25)
 
 
