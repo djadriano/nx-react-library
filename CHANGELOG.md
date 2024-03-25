@@ -1,3 +1,14 @@
+## 8.3.0 (2024-03-25)
+
+
+### 🚀 Features
+
+- **ci:** test 3 ([c434cf6](https://github.com/djadriano/nx-react-library/commit/c434cf6))
+
+### ❤️  Thank You
+
+- Adriano Fernandes
+
 ## 8.2.0 (2024-03-25)
 
 
