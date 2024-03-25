@@ -1,3 +1,14 @@
+## 8.5.0 (2024-03-25)
+
+
+### 🚀 Features
+
+- again ([4dded79](https://github.com/djadriano/nx-react-library/commit/4dded79))
+
+### ❤️  Thank You
+
+- Adriano Fernandes
+
 ## 8.4.0 (2024-03-25)
 
 
