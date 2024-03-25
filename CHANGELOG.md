@@ -1,3 +1,14 @@
+## 8.3.3 (2024-03-25)
+
+
+### 🩹 Fixes
+
+- **build:** fix the build output 3 ([ef6974c](https://github.com/djadriano/nx-react-library/commit/ef6974c))
+
+### ❤️  Thank You
+
+- Adriano Fernandes
+
 ## 8.3.2 (2024-03-25)
 
 
