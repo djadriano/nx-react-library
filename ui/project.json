@@ -6,8 +6,9 @@
   "tags": [],
   "targets": {
     "nx-release-publish": {
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "packageRoot": "./dist"
+        "packageRoot": "ui/dist"
       }
     }
   }
