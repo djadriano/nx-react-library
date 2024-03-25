@@ -111,7 +111,7 @@ jobs:
 
       - name: Run NX build
         run: |
-          npx nx build
+          npx nx build ui
 
       - name: Release
         run: npx nx release publish
