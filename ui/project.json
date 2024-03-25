@@ -4,11 +4,5 @@
   "sourceRoot": "ui/src",
   "projectType": "library",
   "tags": [],
-  "targets": {
-    "nx-release-publish": {
-      "options": {
-        "packageRoot": "ui"
-      }
-    }
-  }
+  "targets": {}
 }
