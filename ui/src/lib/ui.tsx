@@ -6,7 +6,9 @@ export interface UiProps {}
 export function Ui(props: UiProps) {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to Ui! test again and again again again and again again</h1>
+      <h1>
+        Welcome to Ui! test again and again again again and again again again
+      </h1>
     </div>
   );
 }
