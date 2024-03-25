@@ -1,3 +1,14 @@
+## 8.6.0 (2024-03-25)
+
+
+### 🚀 Features
+
+- test again ([0d82979](https://github.com/djadriano/nx-react-library/commit/0d82979))
+
+### ❤️  Thank You
+
+- Adriano Fernandes
+
 ## 8.5.0 (2024-03-25)
 
 
