@@ -18,11 +18,11 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@djadriano'
 
-      - name: Lint
-        run: npx nx run-many -t lint
-
-      - name: Test
-        run: npx nx run-many -t test --configuration=ci
+      - name: Run NX commands
+        run: |
+          npx nx affected --target lint --parallel 3
+          npx nx affected --target test --parallel 3 --ci
+          npx nx affected --target build --parallel 3
 
       - name: Release
         run: npx semantic-release
