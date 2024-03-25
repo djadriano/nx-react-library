@@ -97,6 +97,9 @@ jobs:
             npm ci
           fi
 
+      - name: Clean dist folder
+        run: rm -rf ui/dist
+
       - name: Run NX commands
         run: |
           npx nx affected --target lint --parallel 3
