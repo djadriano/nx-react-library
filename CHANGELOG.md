@@ -1,3 +1,14 @@
+## 8.4.0 (2024-03-25)
+
+
+### 🚀 Features
+
+- foo ([0124c73](https://github.com/djadriano/nx-react-library/commit/0124c73))
+
+### ❤️  Thank You
+
+- Adriano Fernandes
+
 ## 8.3.4 (2024-03-25)
 
 
