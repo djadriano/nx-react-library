@@ -5,15 +5,9 @@
   "projectType": "library",
   "tags": [],
   "targets": {
-    "build": {
-      "inputs": ["production", "^production"],
-      "outputs": ["{workspaceRoot}/ui/dist"],
-      "dependsOn": ["^build"],
-      "options": {}
-    },
     "nx-release-publish": {
       "options": {
-        "packageRoot": "{project}/dist"
+        "packageRoot": "dist/libs/ui"
       }
     }
   }
