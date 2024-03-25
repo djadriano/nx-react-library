@@ -7,17 +7,17 @@
   "// targets": "to see all targets run: nx show project ui --web",
   "targets": {
     "build": {
-      "outputs": ["{workspaceRoot}/dist/ui"]
+      "outputs": ["dist/ui"]
     },
     "nx-release-publish": {
       "options": {
-        "packageRoot": "{workspaceRoot}/dist/ui"
+        "packageRoot": "dist/ui"
       }
     },
     "release": {
       "version": {
         "generatorOptions": {
-          "packageRoot": "{workspaceRoot}/dist/ui"
+          "packageRoot": "dist/ui"
         }
       }
     }
