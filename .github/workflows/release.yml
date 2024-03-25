@@ -84,6 +84,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-${{ steps.versions.outputs.node_version }}-
 
+      - name: Install dependencies
+        run: |
+          if [ "${{ steps.package_manager.outputs.name == 'yarn' }}" == "true" ]; then
+            echo "Running yarn install --frozen-lockfile"
+            yarn install --frozen-lockfile
+          elif [ "${{ steps.package_manager.outputs.name == 'pnpm' }}" == "true" ]; then
+            echo "Running pnpm install --frozen-lockfile"
+            pnpm install --frozen-lockfile
+          else
+            echo "Running npm ci"
+            npm ci
+          fi
+
       - name: Run NX commands
         run: |
           npx nx affected --target lint --parallel 3
@@ -95,9 +108,6 @@ jobs:
         with:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@djadriano'
-
-      - name: Install deps
-        run: npm ci
 
       - name: Release
         run: npx semantic-release
