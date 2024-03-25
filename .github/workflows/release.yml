@@ -110,7 +110,7 @@ jobs:
           scope: '@djadriano'
 
       - name: Release
-        run: npx semantic-release
+        run: npx nx release publish
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
