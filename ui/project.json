@@ -17,7 +17,7 @@
     "release": {
       "version": {
         "generatorOptions": {
-          "packageRoot": "{workspaceRoot}/dist/{projectName}"
+          "packageRoot": "{workspaceRoot}/dist/ui"
         }
       }
     }
