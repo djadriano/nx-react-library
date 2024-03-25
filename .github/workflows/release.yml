@@ -114,7 +114,7 @@ jobs:
         shell: bash
 
       - name: Build library
-        run: nx build ui
+        run: npx nx build ui
 
       - name: Release
         run: |
