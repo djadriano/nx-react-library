@@ -11,13 +11,13 @@
     },
     "nx-release-publish": {
       "options": {
-        "packageRoot": "dist/ui"
+        "packageRoot": "{workspaceRoot}/dist/ui"
       }
     },
     "release": {
       "version": {
         "generatorOptions": {
-          "packageRoot": "dist/{projectName}"
+          "packageRoot": "{workspaceRoot}/dist/{projectName}"
         }
       }
     }
