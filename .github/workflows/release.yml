@@ -109,6 +109,10 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@djadriano'
 
+      - name: Run NX build
+        run: |
+          npx nx build
+
       - name: Release
         run: npx nx release publish
         env:
