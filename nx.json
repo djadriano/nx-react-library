@@ -48,7 +48,6 @@
   "release": {
     "projects": ["*"],
     "version": {
-      "preVersionCommand": "npx nx run-many -t build",
       "conventionalCommits": true
     }
   }
