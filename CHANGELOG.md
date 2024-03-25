@@ -1,3 +1,14 @@
+## 8.6.4 (2024-03-25)
+
+
+### 🩹 Fixes
+
+- foo ([f5278c8](https://github.com/djadriano/nx-react-library/commit/f5278c8))
+
+### ❤️  Thank You
+
+- Adriano Fernandes
+
 ## 8.6.3 (2024-03-25)
 
 
