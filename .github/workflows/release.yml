@@ -97,9 +97,6 @@ jobs:
             npm ci
           fi
 
-      - name: Clean cache
-        run: npx nx reset
-
       - name: Run NX commands
         run: |
           npx nx affected --target lint --parallel 3

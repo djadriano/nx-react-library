@@ -9,7 +9,7 @@ export function Ui(props: UiProps) {
       <h1>
         Welcome to Ui! test again and again again again and again again again
         again again again foo again again again again again again again and
-        again
+        again and again
       </h1>
     </div>
   );
